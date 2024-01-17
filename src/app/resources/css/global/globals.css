@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ol,
+ul {
+    padding-left: 0 !important;
+}
+
+.light-theme {
+    --theme-button: #020a13 !important;
+    --main-bg-color: white !important;
+    --modal-bg-color: white !important;
+    --nav-color-animation1: black;
+    --nav-color-animation2: white;
+    --card-bg-color: #dadeff !important;
+    --card-border-color: #c5d1ff;
+    --card-border-color-hover: #4bbdff;
+    --card-box-shadow: #00000063;
+    --card-project-background: rgb(171, 171, 171, 0.619);
+    --text-nav-color: black !important;
+    --text-nav-color-hover: rgb(57, 57, 57) !important;
+    --text-span-title: rgb(25, 106, 205) !important;
+    --text-content: rgb(36, 36, 36) !important;
+    --default-text: black !important;
+    --scrollbar-track: white !important;
+    --scrollbar-thumb: rgb(0, 97, 216) !important;
+    --rotate-border-color: rgba(197, 197, 197, 0.5)!important;
+    --border-nav-pills: #bfbfbf;
+}
+
+.dark-theme {
+    --theme-button: #ffffff !important;
+    --main-bg-color: #020a13 !important;
+    --modal-bg-color: rgb(36, 36, 36) !important;
+    --nav-color-animation1: #6dacff;
+    --nav-color-animation2: #17161d;
+    --card-bg-color: #020d18 !important;
+    --card-border-color: #082141;
+    --card-border-color-hover: #0037ff;
+    --card-project-background: rgba(0, 0, 0, 0.619);
+    --card-box-shadow: #121212;
+    --text-nav-color: rgb(132, 132, 132) !important;
+    --text-nav-color-hover: white !important;
+    --text-span-title: rgb(83, 160, 255) !important;
+    --text-content: rgb(138, 138, 138) !important;
+    --default-text: white !important;
+    --scrollbar-track: rgb(0, 1, 22) !important;
+    --scrollbar-thumb: rgb(83, 160, 255) !important;
+    --rotate-border-color: rgba(0, 0, 0, 0.5)!important;
+    --border-nav-pills: #141414;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.bg-content-style {
+    background-color: var(--main-bg-color);
+    transition: background-color 0.5s, color 0.3s;
+}
+
+.bg-card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.3s;
+    transition: 1s;
+    box-shadow: 0px 0px 7px var(--card-box-shadow);
+}
+
+.bg-border-hover:hover {
+    border: 1px solid var(--card-border-color-hover);
+    transition: 1s;
+}
+
+.text-nav-color {
+    color: var(--text-nav-color);
+}
+
+.text-content {
+    color: var(--text-content) !important;
+}
+
+.modal-bg-color {
+    background-color: var(--modal-bg-color);
+    transition: background-color 0.5s, color 0.3s;
+}
+
+.text-nav-color:hover {
+    color: var(--text-nav-color-hover);
+}
+
+.default-text {
+    color: var(--default-text)
+}
+
+.span-title {
+    color: var(--text-span-title);
+}
+
+.section-content {
+    height: 100vh;
+}
+
+.icon-bg {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--card-border-color);
+    color: var(--text-span-title);
+    transition: background-color 0.5s, color 0.3s;
+}
+
+.icon-content {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.icon-bg:hover {
+    border-color: var(--card-border-color-hover);
+}
+
+.icon-size {
+    font-size: 1.6em;
+}
+
+.responsive-align-row {
+    justify-content: center !important;
+}
+
+.section-title {
+    font-size: 1.5em !important;
+    margin-bottom: 130px !important;
+    letter-spacing: 2px;
+}
+
+.info-button {
+    padding: 2px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: #2779e300;
+    font-size: 0.8em;
+    border: 1px solid #2779e3;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    transition: 1s;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    transition: 1s;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 14px;
+    transition: 1s;
+}

@@ -1,0 +1,109 @@
+.section-home {
+  height: 100dvh;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: hidden;
+  min-height: 600px;
+}
+
+.initial-text-apresentation {
+  z-index: 1;
+  margin-right: 2em;
+}
+
+.initial-title-apresentation {
+  max-width: 700px;
+  margin-top: 1em;
+}
+
+.initial-paragraph-apresentation {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.cv-button {
+  width: 130px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rotate-border-color);
+  overflow: hidden;
+  border: 0;
+  border-radius: 20px;
+  margin-top: 2em;
+}
+
+.cv-button::before {
+  content: '';
+  position: absolute;
+  width: 130%;
+  height: 50%;
+  background: linear-gradient(#0051ff, #4c00fd);
+  animation: animate 4s linear infinite;
+}
+
+.cv-button::after {
+  content: 'Download CV';
+  color: white;
+  display: flex;
+  font-family: monospace;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 3px; 
+  background: rgb(29, 148, 247);
+  border-radius: 20px;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-size: 2.3em;
+}
+
+.animation-heartcode {
+  z-index: 0;
+  max-width: 45%;
+}
+
+@media (max-width: 968px) {
+
+  .initial-text-apresentation {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .initial-title-apresentation {
+    font-size: 2.1em!important;
+  }
+
+  .initial-paragraph-apresentation {
+    font-size: 1.4em;
+    margin-top: 1em;
+  }
+
+  .animation-heartcode {
+    position: absolute;
+    margin: auto;
+    opacity: 0;
+    max-width: none;
+  }
+
+  .logo-description {
+    display: none;
+  }
+}
